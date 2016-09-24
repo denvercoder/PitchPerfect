@@ -19,6 +19,33 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    @IBOutlet weak var OuterStackView: UIStackView!
+    @IBOutlet weak var innerStackView1: UIStackView!
+    @IBOutlet weak var innerStackView2: UIStackView!
+    @IBOutlet weak var innerStackView3: UIStackView!
+    @IBOutlet weak var innerStackView4: UIStackView!
+    
+    func setInnerStackViewsAxis(axisStyle: UILayoutConstraintAxis)  {
+        self.innerStackView1.axis = axisStyle
+        self.innerStackView2.axis = axisStyle
+        self.innerStackView3.axis = axisStyle
+        self.innerStackView4.axis = axisStyle
+    }
+    
+    func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { (context) -> Void in
+            let orientation = UIApplication.shared.statusBarOrientation
+            
+            if orientation.isPortrait{
+                self.OuterStackView.axis = .vertical
+                self.setInnerStackViewsAxis(axisStyle: .horizontal)
+            } else {
+                self.OuterStackView.axis = .horizontal
+                self.setInnerStackViewsAxis(axisStyle: .vertical)
+            }
+            }, completion: nil)
+    }
+    
     var recordedAudioURL: NSURL!
     var audioFile: AVAudioFile!
     var audioEngine: AVAudioEngine!
