@@ -121,12 +121,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A9q-eE-JGH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9kO-El-8a3"/>
-                            <constraint firstItem="Vdd-za-lz6" firstAttribute="centerX" secondItem="3QX-rm-A0h" secondAttribute="centerX" id="X3N-22-ukk"/>
-                            <constraint firstItem="Vdd-za-lz6" firstAttribute="top" secondItem="3QX-rm-A0h" secondAttribute="bottom" constant="31" id="aUZ-en-yja"/>
+                            <constraint firstItem="A9q-eE-JGH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-44.5" id="9kO-El-8a3"/>
+                            <constraint firstItem="Vdd-za-lz6" firstAttribute="centerX" secondItem="3QX-rm-A0h" secondAttribute="centerX" constant="3.5" id="X3N-22-ukk"/>
+                            <constraint firstItem="Vdd-za-lz6" firstAttribute="top" secondItem="3QX-rm-A0h" secondAttribute="bottom" constant="20.5" id="aUZ-en-yja"/>
                             <constraint firstItem="A9q-eE-JGH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ic9-Dy-1NZ"/>
-                            <constraint firstItem="3QX-rm-A0h" firstAttribute="top" secondItem="A9q-eE-JGH" secondAttribute="bottom" constant="26" id="keL-hx-mLE"/>
-                            <constraint firstItem="3QX-rm-A0h" firstAttribute="centerX" secondItem="A9q-eE-JGH" secondAttribute="centerX" id="kte-xR-S8V"/>
+                            <constraint firstItem="3QX-rm-A0h" firstAttribute="top" secondItem="A9q-eE-JGH" secondAttribute="bottom" constant="16" id="keL-hx-mLE"/>
+                            <constraint firstItem="3QX-rm-A0h" firstAttribute="centerX" secondItem="A9q-eE-JGH" secondAttribute="centerX" constant="-3.5" id="kte-xR-S8V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="74Q-ms-cHH"/>
